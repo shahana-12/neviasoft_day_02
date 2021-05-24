@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+}
+.title h2{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+}
+.title h2::after{
+    height: 2px;
+    width: 100px;
+    background: #d93800;
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 47%;
+    display: block;
+}
+
+/* =============================================
+                Header part start
+================================================*/
+
+header{
+    background: #555;
+    color: #fff;
+    font-size: 0.9rem;
+}
+header .header_icons{
+    display: flex;
+    padding-top: 10px;
+}
+header .header_icons .header_item{
+    display: flex;
+    margin-right: 8px;
+}
+header .header_icons .header_item .item_icon{
+    margin-right: 4px;
+}
+header .header_icons .header_item .item_text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+    font-size: 13px;
+    color: white;
+}
+header .header_icons .header_item .item_icon i{
+    font-size: 12px;
+}
+header .header_icons .header_item .item_text a{
+    color: white;
+}
+header .header_icons .button a{
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 10px;
+    padding: 5px 8px;
+    border: 1px solid white;
+    transition: .4s;
+
+}
+header .header_icons .button a:hover{
+    color: #d93800 !important;
+    background: white;
+}
+
+/* =============================================
+                Header part end
+================================================*/
+
+/* =============================================
+                Navbar part start
+================================================*/
+ nav{
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    display: block;
+}
+.logo img{
+    margin-left: 20px;
+}
+nav ul .first_li{
+    background: #d93800;
+}
+nav ul .first_li a{
+    color: white !important;
+    border-top: 3px solid #d93800;
+}
+ nav ul li a{
+    border-top: 3px solid white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #555 !important;
+    padding: 25px 15px !important;
+}
+nav ul .dropdown a:hover{
+    background: rgba(217, 56, 0, 0.5);
+    border-color: rgba(217, 56, 0, 0.8);
+}
+nav ul li{
+    margin-top: -8px !important;
+    
+}
+nav ul .last_dropdrown{
+    margin-top: 0 !important;
+}
+
+
+
+.megamenu{
+    max-width: 85%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 350px;
+    padding: 15px;
+}
+.megamenu .items h5{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ccc;
+    margin-top: .7rem;
+    margin-bottom: .5rem;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.megamenu .items h5 a{
+    color: #d93800 !important;
+    border-top: none;
+    padding-left: 0 !important;
+}
+.megamenu .items h5 a:hover{
+    text-decoration: underline;
+    background: none;
+}
+.megamenu .items ul{
+    margin-bottom: 20px;
+}
+.megamenu .items ul li{
+    padding: 7px  0 !important;
+    border-bottom: 1px solid #eee;
+}
+.megamenu .items ul li a{
+    border: none !important;
+    color: #777 !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    letter-spacing: 1px !important;
+    transition: .4s;
+    margin-left: 0;
+    padding-left: 0 !important;
+}
+.megamenu .items ul li:hover a{
+    background: none;
+    margin-left: 8px;
+    color: #d93800 !important;
+}
+
+
+nav ul .active{
+    background: #d93800;
+}
+.active a{
+    color: white !important;
+    border-top: 3px solid #d93800;
+}
+ .sticky{
+    padding-top: 10px;
+    width: 100%;
+    position: fixed;
+    transition: .4s;
+    background: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+/* =============================================
+                Navbar part end
+================================================*/
+
+/* =============================================
+                Banner part start
+================================================*/
+#banner_part{
+    background: url(../images/photogrid.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#banner_part .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .1);
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#banner_part .overlay .banner_slider .slider .slider_item{
+    display: flex;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .img_part{
+    width: 60%;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .img_part img{
+    width: 100%;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .text_part{
+    width: 40%;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .text_part h2{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .text_part a{
+    display: block;
+    margin-top: 20px;
+    transition: .4s;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .text_part a span{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+    transition: .4s;
+}
+#banner_part .overlay .banner_slider .slider .slider_item .text_part a:hover span{
+    background: #333;
+    color: white;
+}
+#banner_part .overlay .banner_slider .slick-dots{
+    text-align: center;
+}
+
+#banner_part .overlay .banner_slider .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#banner_part .overlay .banner_slider .slick-dots li button{
+    border-radius: 50%;
+    background: #aaa;
+    border: 0px;
+    color: transparent;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 1px;
+    line-height: 0;
+    margin: 0;
+    top: 0;
+    display: block;
+}
+#banner_part .overlay .banner_slider .slick-dots .slick-active button{
+    background: white;
+}
+/* =============================================
+                Banner part end
+================================================*/
+
+/* =============================================
+                product part start
+================================================*/
+#product_part{
+    margin-bottom: 70px;
+}
+ .product{
+    border-bottom:  1px solid #ddd;
+    transition: .4s;
+}.product:hover{
+    border-color: black;
+}.product:hover img{
+    transform: scale(1.1);
+}
+#product_part .product_row{
+    padding-top: 30px;
+}
+.product .product_img{
+    min-height: 150px;
+    max-height: 350px;
+    overflow: hidden;
+}.product .product_img img{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}.product .product_details{
+    text-align: center;
+}
+ .product .product_details h5 a{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}.product .product_details h5:hover a{
+    color: #d93800;
+}.product .product_details p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+.product .product_details a{
+    display: block;
+    margin-bottom: 15px;
+    transition: .4s;
+} .product .product_details a span{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #333;
+    border: 1px solid #333;
+    padding: 6px;
+    transition: .4s;
+}.product .product_details a:hover span{
+    color: white;
+    background: #333;
+}
+/* =============================================
+                product part end
+================================================*/
+
+
+/* =============================================
+                testimonial part start
+================================================*/
+#testimonial_part{
+    background: url(../images/texture-bw.jpg) center center repeat;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding-bottom: 30px;
+}
+#testimonial_part .title{
+    padding: 30px 0;
+}
+#testimonial_part .text{
+    margin-bottom: 45px;
+}
+#testimonial_part .text h2{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#testimonial_part .testimonial_slide{
+    margin-top: 20px;
+}
+#testimonial_part .testimonial_slide .testi_item .testi{
+    background: white;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 10px;
+}
+#testimonial_part .testimonial_slide .testi_item .testi .text p{
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 200px;
+}
+#testimonial_part .testimonial_slide .testi_item .testi .details{
+    display: flex;
+    margin-top: 100px;
+}
+#testimonial_part .testimonial_slide .testi_item .testi .details .icon i{
+    color: #d93800;
+    font-size: 32px;
+    margin-right: 30px;
+}
+#testimonial_part .testimonial_slide .testi_item .testi .details .star{
+    text-align: right;
+}
+#testimonial_part .testimonial_slide .testi_item .testi .details .star h5{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+#testimonial_part .testimonial_slide .testi_item .testi .details .star i{
+    color: orange;
+    font-size: 12px;
+    letter-spacing: -4px;
+}
+#testimonial_part .testimonial_slide .slick-dots{
+    text-align: center;
+}
+#testimonial_part .testimonial_slide .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#testimonial_part .testimonial_slide .slick-dots li button{
+    border-radius: 50%;
+    background: #aaa;
+    border: 0px;
+    color: transparent;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 1px;
+    line-height: 0;
+    margin: 0;
+    top: 0;
+    display: block;
+}
+#testimonial_part .testimonial_slide .slick-dots .slick-active button{
+    background: #d93800;
+}
+/* =============================================
+                testimonial part end
+================================================*/
+
+/* =============================================
+                text_slide part start
+================================================*/
+#text_slide_part{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#text_slide_part .text_slide .slide_details h3{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #212529;
+    margin-bottom: 20px;
+}
+#text_slide_part .text_slide .slide_details p{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.slick-dots{
+    text-align: center;
+}
+.slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slick-dots li button{
+    border-radius: 50%;
+    background: #aaa;
+    border: 0px;
+    color: transparent;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 1px;
+    line-height: 0;
+    margin: 0;
+    top: 0;
+    display: block;
+}
+.slick-dots .slick-active button{
+    background: #d93800;
+}
+/* =============================================
+                text_slide part end
+================================================*/
+
+/* =============================================
+                contact_button_part part start
+================================================*/
+#contact_part{
+    background: #d93800;
+    text-align: center;
+}
+#contact_part .text{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#contact_part .text h1{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+}
+#contact_part a{
+    color: white;
+    padding: 5px 12px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .4s;
+}
+#contact_part a:hover{
+    background: white;
+    color: #d93800;
+}
+/* =============================================
+                contact_button_part part end
+================================================*/
+
+/* =============================================
+                footer part start
+================================================*/
+
+/* =============================================
+                footer part end
+================================================*/
+footer{
+    padding: 20px 0;
+    padding-bottom: 20px;
+    background-image: url('../images/bg_footer-map.png');
+    color: #fff;
+}
+footer .footer_item h5{
+    color: #eee;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+footer .footer_item .items{
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: -17px;
+}
+footer .footer_item .border_bottom{
+    border-bottom: 1px solid white;
+}
+footer .footer_item .work_hours h5{
+    color: #eee;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+footer .footer_item .work_hours p{
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: -1px;
+}
+footer .footer_item .derivary_img{
+    margin-top: 35px;
+}
+footer .footer_item .form_part{
+    overflow-y: scroll;
+    height: 400px;
+}
+footer .footer_item .form_part form{
+    margin-left: 15px;
+}
+footer .footer_item .form_part form input,textarea{
+    display: block;
+    width: 98%;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+}
+footer .footer_item .form_part form button{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    line-height: 1.42857143;
+    color: #333;
+    border: none;
+    padding: 3px 8px;
+}
+footer .footer_item .form_part form input::placeholder{
+    font-size: 14px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+}
+footer .footer_item .form_part form textarea::placeholder{
+    font-size: 14px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+
+footer .footer_item .media_link a{
+    display: block;
+    color: white;
+}
+footer .footer_item .media_link .location{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+footer .footer_item .media_link .location a{
+    background: #d93800;
+    padding: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+footer .footer_item .media_link .location a:hover{
+    background: black;
+}
+footer .footer_item .links_list ul{
+    margin-left: -27px;
+}
+footer .footer_item .links_list ul li a{
+    color: white;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+}
+/* =============================================
+                footer_bottom_part part start
+================================================*/
+#footer_bottom{
+    background: #333;
+}
+#footer_bottom p{
+    color: #ccc;
+    font-size: 12px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+#footer_bottom .text p{
+    text-align: right;
+}
+#footer_bottom .text p a{
+    color: #d93800;
+}
+#footer_bottom .row_text{
+    padding-top: 20px;
+}
+#footer_bottom .row_text .big_text .bottom_p{
+    width: 698px;
+    margin-top: -14px;
+}
+/* =============================================
+                footer_bottom_part part end
+================================================*/

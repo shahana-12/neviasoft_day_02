@@ -1,0 +1,54 @@
+/* ================================================
+                breadcrumb part start
+===================================================*/
+
+#breadcrumb_part{
+    background: url(../images/texture-bw.jpg);
+}
+
+#breadcrumb_part ol li{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 0;
+    color: #6c757d !important;
+}
+#breadcrumb_part ol li a{
+    color: #d93800;
+    margin-right: 7px;
+}
+#breadcrumb_part ol li a:hover{
+    text-decoration: underline;
+}
+
+/* ================================================
+                breadcrumb part end
+===================================================*/
+
+/* ================================================
+                about part start
+===================================================*/
+#about_part{
+    margin: 50px 0;
+}
+#about_part .title{
+    text-align: left;
+}
+#about_part .title h2::after{
+    left: 0;
+}
+#about_part .about_items{
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+#about_part .about_items .item h4{
+    font-size: medium;
+}
+#about_part .about_items .item p{
+    margin-top: 15px;
+    color: #212529;
+}
+/* ================================================
+                about part end
+===================================================*/
